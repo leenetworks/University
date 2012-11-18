@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D1504AF5-A025-44E1-9513-34FC306CBD31}</ProjectGuid>
+    <RootNamespace>Graphicslee</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CWMPCdromCollection.cpp" />
+    <ClCompile Include="CWMPClosedCaption.cpp" />
+    <ClCompile Include="CWMPClosedCaption2.cpp" />
+    <ClCompile Include="CWMPControls.cpp" />
+    <ClCompile Include="CWMPControls2.cpp" />
+    <ClCompile Include="CWMPControls3.cpp" />
+    <ClCompile Include="CWMPDVD.cpp" />
+    <ClCompile Include="CWMPError.cpp" />
+    <ClCompile Include="CWMPErrorItem.cpp" />
+    <ClCompile Include="CWMPErrorItem2.cpp" />
+    <ClCompile Include="CWMPMedia.cpp" />
+    <ClCompile Include="CWMPMedia2.cpp" />
+    <ClCompile Include="CWMPMedia3.cpp" />
+    <ClCompile Include="CWMPMediaCollection.cpp" />
+    <ClCompile Include="CWMPMetadataPicture.cpp" />
+    <ClCompile Include="CWMPMetadataText.cpp" />
+    <ClCompile Include="CWMPPlayer.cpp" />
+    <ClCompile Include="CWMPPlayer2.cpp" />
+    <ClCompile Include="CWMPPlayer3.cpp" />
+    <ClCompile Include="CWMPPlayer4.cpp" />
+    <ClCompile Include="CWMPPlaylist.cpp" />
+    <ClCompile Include="CWMPPlaylistCollection.cpp" />
+    <ClCompile Include="CWMPSettings.cpp" />
+    <ClCompile Include="CWMPSettings2.cpp" />
+    <ClCompile Include="FetchColorDlg.cpp" />
+    <ClCompile Include="FetchObj.cpp" />
+    <ClCompile Include="Graphicslee.cpp" />
+    <ClCompile Include="GraphicsleeDoc.cpp" />
+    <ClCompile Include="GraphicsleeView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MedPlyDlg.cpp" />
+    <ClCompile Include="ocx1.cpp" />
+    <ClCompile Include="PicShow.cpp" />
+    <ClCompile Include="ReverseColorDlg.cpp" />
+    <ClCompile Include="SettingDlg.cpp" />
+    <ClCompile Include="Splash1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CWMPCdromCollection.h" />
+    <ClInclude Include="CWMPClosedCaption.h" />
+    <ClInclude Include="CWMPClosedCaption2.h" />
+    <ClInclude Include="CWMPControls.h" />
+    <ClInclude Include="CWMPControls2.h" />
+    <ClInclude Include="CWMPControls3.h" />
+    <ClInclude Include="CWMPDVD.h" />
+    <ClInclude Include="CWMPError.h" />
+    <ClInclude Include="CWMPErrorItem.h" />
+    <ClInclude Include="CWMPErrorItem2.h" />
+    <ClInclude Include="CWMPMedia.h" />
+    <ClInclude Include="CWMPMedia2.h" />
+    <ClInclude Include="CWMPMedia3.h" />
+    <ClInclude Include="CWMPMediaCollection.h" />
+    <ClInclude Include="CWMPMetadataPicture.h" />
+    <ClInclude Include="CWMPMetadataText.h" />
+    <ClInclude Include="CWMPPlayer.h" />
+    <ClInclude Include="CWMPPlayer2.h" />
+    <ClInclude Include="CWMPPlayer3.h" />
+    <ClInclude Include="CWMPPlayer4.h" />
+    <ClInclude Include="CWMPPlaylist.h" />
+    <ClInclude Include="CWMPPlaylistCollection.h" />
+    <ClInclude Include="CWMPSettings.h" />
+    <ClInclude Include="CWMPSettings2.h" />
+    <ClInclude Include="FetchColorDlg.h" />
+    <ClInclude Include="FetchObj.h" />
+    <ClInclude Include="Graphicslee.h" />
+    <ClInclude Include="GraphicsleeDoc.h" />
+    <ClInclude Include="GraphicsleeView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MedPlyDlg.h" />
+    <ClInclude Include="ocx1.h" />
+    <ClInclude Include="PicShow.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ReverseColorDlg.h" />
+    <ClInclude Include="SettingDlg.h" />
+    <ClInclude Include="Splash1.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\200504290952211.bmp" />
+    <None Include="res\bmp2_副本.bmp" />
+    <None Include="res\Graphicslee.ico" />
+    <None Include="res\Graphicslee.rc2" />
+    <None Include="res\GraphicsleeDoc.ico" />
+    <None Include="res\SPALSH.bmp" />
+    <None Include="res\SPLASH.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\untitled8.bmp" />
+    <None Include="res\图像的剪切图片2.bmp" />
+    <None Include="res\小人图片.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Graphicslee.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Graphicslee.rc" _x007B_6BF52A52-394A-11d3-B153-00C04F79FAA6_x007D_="CWMPPlayer4" _x007B_6BF52A52-394A-11D3-B153-00C04F79FAA6_x007D_="COcx1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
